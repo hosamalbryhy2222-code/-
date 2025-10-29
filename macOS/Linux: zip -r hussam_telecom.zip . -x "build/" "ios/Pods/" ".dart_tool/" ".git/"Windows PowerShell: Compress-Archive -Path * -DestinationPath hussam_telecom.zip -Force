@@ -1,2 +1,12 @@
 git clone https://github.com/hosamalbryhy2222-code/-.git hussam_telecom
 cd hussam_telecom
+flutter pub get
+./tools/fetch_assets.sh
+dart pub global activate flutterfire_cli
+flutterfire configure
+dart analyze
+flutter test || tr
+
+git add .
+git commit -m "Initial commit: Hussam Telecom (Arabic theme + WiFi vouchers + Seed + Icons)"
+git push origin HEAD:main
